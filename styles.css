@@ -1,0 +1,298 @@
+/* ---------------------------
+   Global Reset + Base Styles
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    
+}
+
+/* ---------------------------
+   Header / Navbar
+---------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #212529;
+}
+
+.logo span {
+    color: #0d6efd; /* Bootstrap Primary Blue */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #212529;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0d6efd;
+}
+
+.header button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    background: #0b5ed7;
+}
+
+/* ---------------------------
+   Home Section
+---------------------------- */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.homepage {
+    max-width: 50%;
+}
+
+.homepage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.homepage h1 span {
+    color: #0d6efd;
+}
+
+.homepage p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+/* Buttons */
+.btn-group .btn {
+    display: inline-block;
+    background: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-group .btn:hover {
+    background: #0b5ed7;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #212529;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0d6efd;
+}
+
+/* Home Image */
+.home-img img {
+    width: 300px;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------------------------
+   About Section
+---------------------------- */
+.about {
+    background: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2 span {
+    color: #0d6efd;
+}
+
+.about h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #0d6efd;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 20px;
+}
+
+.about img {
+    max-width: 55%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+}
+
+.about .btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .btn:hover {
+    background: #0a58ca;
+    transform: translateY(-3px);
+}
+
+/* ---------------------------
+   Services Section
+---------------------------- */
+.services {
+    background: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.services .section-title span {
+    color: #007bff;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------
+   Projects Section
+---------------------------- */
+.projects {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.project-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h5 {
+    font-weight: bold;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+.footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #0d6efd;
+}
